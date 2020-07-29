@@ -1,0 +1,224 @@
+	.view{
+		height: 100vh;
+		min-height: 350px;
+		
+	}
+	@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+	body{
+	  background: #f2f2f2;
+	  font-family: 'Open Sans', sans-serif;
+	}
+
+	.search {
+	  width: 100%;
+	  position: relative;
+	  display: flex ;
+	}
+
+	.searchTerm {
+	  width: 100%;
+	  border: 3px solid #fff;
+	  padding: 5px;
+	  height: 50px;
+	  border-radius:10px 10px 10px 10px;
+	  outline: none;
+	  color: #9DBFAF;
+	  background-color:#181a1b; 
+	  focus {
+	  border: 3px solid #555;}
+	}
+
+	.searchTerm:focus{
+	  color: #bd2130;
+	}
+
+	.searchButton {
+	  width: 30%;
+	  height: 36px;
+	  border: 3px solid #bd2130;
+	  background:#181a1b;
+	  text-align: center;
+	  color: #fff;
+	  border-radius: 10px 10px 10px 10px;
+	  cursor: pointer;
+	  font-size: 20px;
+	      margin-left: 30%;
+	    margin-top: 10px;
+	}
+
+	/*Resize the wrap to see the search bar change!*/
+	.wrap{
+	  width: 50%;
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	}
+
+	.form-class{
+		width: 100%;
+	}
+
+	  /*Trigger Button*/
+	.login-trigger {
+	  font-weight: bold;
+	  color: #fff;
+	  background: linear-gradient(to bottom right, #B05574, #F87E7B);
+	  padding: 15px 30px;
+	  border-radius: 30px;
+	  position: relative; 
+	  top: 50%;
+	}
+
+	/*Modal*/
+	h4 {
+	  font-weight: bold;
+	  color: #fff;
+	}
+	.close {
+	  color: #fff;
+	  transform: scale(1.2)
+	}
+	.modal-content {
+	  font-weight: bold;
+	  background: linear-gradient(to bottom right,#4D9CD5,#6B3D80);
+	}
+	.form-control {
+	  margin: 1em 0;
+	}
+	.form-control:hover, .form-control:focus {
+	  box-shadow: none;  
+	  border-color: #fff;
+	}
+	.username, .password, .email,.name, .cpassword{
+	  border: none;
+	  border-radius: 0;
+	  box-shadow: none;
+	  border-bottom: 2px solid #fff;
+	  padding-left: 0;
+	  font-weight: normal;
+	  background: transparent;  
+	}
+	.form-control::-webkit-input-placeholder {
+	  color: #fff;  
+	}
+	.form-control:focus::-webkit-input-placeholder {
+	  font-weight: bold;
+	  color: #fff;
+	}
+	.login {
+	  padding: 6px 20px;
+	  border-radius: 20px;
+	  background: none;
+	  border: 2px solid #fff;
+	  color: #fff;
+	  font-weight: bold;
+	  transition: all .5s;
+	  margin-top: 1em;
+	}
+	.login:hover {
+	  background: #FAB87F;
+	  color: #fff;
+	}
+
+/*****************************************************************88*/
+
+/********************************************************/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  font-family: 'segoe ui';
+}
+
+.navvc {
+  height: 50px;
+  width: 100%;
+  background-color:#181a1b;
+  position: relative;
+}
+
+.navvc > .navvc-header {
+  display: inline;
+}
+
+.navvc > .navvc-header > .navvc-title {
+  display: inline-block;
+  font-size: 22px;
+  color: #fff;
+  padding: 0px 10px 10px 10px;
+}
+
+.navvc > .navvc-btn {
+  display: none;
+}
+
+.navvc > .navvc-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+}
+
+.navvc > .navvc-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #efefef;
+}
+
+.navvc > .navvc-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.navvc > #navvc-check {
+  display: none;
+}
+
+@media (max-width:600px) {
+  .navvc > .navvc-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .navvc > .navvc-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .navvc > .navvc-btn > label:hover,.navvc  #navvc-check:checked ~ .navvc-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .navvc > .navvc-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .navvc > .navvc-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #181a1b;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .navvc > .navvc-links > a {
+    display: block;
+    width: 100%;
+  }
+  .navvc > #navvc-check:not(:checked) ~ .navvc-links {
+    height: 0px;
+  }
+  .navvc > #navvc-check:checked ~ .navvc-links {
+    height: calc(50vh - 50px);
+    overflow-y: auto;
+  }
+}

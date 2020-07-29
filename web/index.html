@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="logincss.css" />
+         <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+         <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body class="bkg"Z>
+        <header>
+
+    <div class="navvc">
+      <input type="checkbox" id="navvc-check">
+      <div class="navvc-header">
+        <div class="navvc-title">
+         <a href="#" class="navbar-brand d-flex align-items-left shrink-to-fit">
+          <img src="image/ppp.png" style="width:150px; height: 50px;">  
+        </a>
+      </div>
+    </div>
+    <div class="navvc-btn">
+      <label for="navvc-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+
+    <div class="navvc-links" style="padding-right: 20px; ">
+    
+      
+      <a  href="signup.html" data-target="#signup" data-toggle="modal" >Signup</a>
+     
+
+    </div>
+  </div> 
+  </header>
+  <div>
+        <div class="cont">
+   <h2> Welcome to Price Point </h2>
+  <div class="form">
+
+            <form name="logform" action="login.jsp" method="post" onsubmit="return loginValidate();">
+                <h2 style="font-weight: bold; font-family:Times, Times New Roman, serif; font-style: italic; color: black;">Welcome to Price Point</h2>
+            <input type="text" name="username" class="user" placeholder="Username" id="username"   />
+            <input type="password" name="password" class="pass" placeholder="Password" id="password"/>
+            <input class="blogin" type="submit" value="Login" align="center" />
+            <a href="signup.html" data-target="#signup" data-toggle="modal" data-dismiss="modal">Create Account
+            </a>
+
+          </form>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/val.js"></script>
+    </body>
+</html>
